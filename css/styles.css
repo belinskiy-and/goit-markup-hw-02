@@ -192,3 +192,40 @@ body {
 .footer-contact {
     color: rgba(255, 255, 255, 0.6);
 }
+
+/* ==========page PORTFOLIO========== */
+
+/* -------------------PROJECTS------------------- */ 
+
+.projects-filter-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--second-header-color);
+}
+
+.projects-filter-btn:active {
+    color: var(--first-header-color);
+    background-color: var(--accent-color);
+}
+
+.projects-filter-btn:hover {
+    color: var(--first-header-color);
+    background-color: var(--accent-color);
+}
+
+.projects-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--second-header-color);
+}
+
+.projects-item-content {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--first-content-color);
+}
