@@ -1,21 +1,29 @@
 /* -------------------GLOBAL------------------- */
 
 :root {
+    /* Text colors */
     --accent-color: #2196F3;
-    --header-text-color: #212121;
-    --header-contacts-color: #757575;
-    --first-header-color: #FFFFFF;
-    --second-header-color: #212121;
-    --third-header-color: #212121;
-    --first-content-color: #757575;
-    --second-content-color: #FFFFFF;
-    --third-content-color: rgba(255, 255, 255, 0.6);
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --third-text-color: #FFFFFF;
+    --fourth-text-color: rgba(255, 255, 255, 0.6);
+
+    /* Block colors */
     --first-block-color: #2F303A;
     --second-block-color: #F5F4FA;
+    --third-block-color: #FFFFFF;
 }
 body {
     font-family: "Roboto", sans-serif;
-    font-style: normal;
+    flood-color: var(--main-text-color);
+    background: var(--third-block-color);
+    letter-spacing: 0.03em;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .link {
@@ -29,32 +37,38 @@ body {
 /* -------------------HEADER------------------- */
 
 .logo-link {
-    font-family: Raleway;    
+    font-family: Raleway, sans-serif;    
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--header-text-color);
-}
-
-.logo-left {
     color: var(--accent-color);
 }
 
-.header-link {
+.logo-right-header {
+    color: var(--main-text-color);
+}
+
+.nav-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--header-text-color);
+    color: var(--main-text-color);
 }
 
-.header-link:hover {
+.nav-link.current {
     color: var(--accent-color);
 }
 
-.header-address {
-    color: var(--header-contacts-color);
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--accent-color);
+}
+
+.contacts-link {
+    color: var(--second-text-color);
 }
 
 /* -------------------HERO------------------- */
@@ -70,11 +84,11 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--first-header-color);
+    color: var(--third-text-color);
 }
 
 .hero-btn { 
-    font-style: inherit;   
+    font-family: inherit;   
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -83,7 +97,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
-    color: var(--first-header-color);
+    color: var(--third-text-color);
 }
 
 /* -------------------REASONS------------------- */
@@ -105,16 +119,14 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--second-header-color);
+    color: var(--main-text-color);
   }
 
   .reason-content {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--first-content-color);
+    color: var(--second-text-color);
   }
 
  /* -------------------WORKS------------------- */ 
@@ -124,8 +136,7 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-header-color);
+    color: var(--main-text-color);
  }
 
  /* -------------------TEAM------------------- */ 
@@ -134,13 +145,16 @@ body {
      background-color: var(--second-block-color);
  }
 
+ .team-item {
+    background-color: var(--third-block-color);
+ }
+
  .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-header-color);   
+    color: var(--main-text-color);   
  }
 
  .team-person-name {
@@ -148,16 +162,14 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-header-color);
+    color: var(--main-text-color);
  }
 
 .team-person-position {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--first-content-color);
+    color: var(--second-text-color);
 } 
 
 /* -------------------FOOTER------------------- */ 
@@ -171,48 +183,60 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--first-header-color);
+    color: var(--accent-color);
 }
 
-.footer-logo-left {
-    color: var(--accent-color);
+.logo-right-footer {    
+    color: var(--third-text-color);
 }
 
 .footer-contacts {
     font-style: inherit;
 }
 
-.footer-link {
+.footer-address {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--second-content-color);
+    color: var(--third-text-color);
 }
 
 .footer-contact {
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--fourth-text-color);
 }
+
+.footer-address:hover,
+.footer-address:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--accent-color);    
+}
+
 
 /* ==========page PORTFOLIO========== */
 
 /* -------------------PROJECTS------------------- */ 
 
 .projects-filter-btn {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    color: var(--second-header-color);
+    color: var(--main-text-color);
 }
 
-.projects-filter-btn:active {
-    color: var(--first-header-color);
+/* ВОПРОС: Не совсем понимаю, стоит ли это объеденить с нижним блоком,
+    или так, как это немного другое - оставить отдельным блоком?  */
+.projects-filter-btn.current {
+    color: var(--third-text-color);
     background-color: var(--accent-color);
 }
 
-.projects-filter-btn:hover {
-    color: var(--first-header-color);
+.projects-filter-btn:hover,
+.projects-filter-btn:focus {
+    color: var(--third-text-color);
     background-color: var(--accent-color);
 }
 
@@ -221,12 +245,11 @@ body {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-    color: var(--second-header-color);
+    color: var(--main-text-color);
 }
 
 .projects-item-content {
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: var(--first-content-color);
+    color: var(--second-text-color);
 }
