@@ -1,5 +1,10 @@
 .site-nav-link {
   font-weight: 500;
+  color: #2e2f42;
+}
+
+.address-item-link {
+  color: #2e2f42;
 }
 
 .site-nav-link:hover,
