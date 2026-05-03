@@ -3,6 +3,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+
+  background-color: #ffffff;
 }
 
 a {
@@ -10,22 +12,22 @@ a {
   color: inherit;
 }
 
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
-
 ul {
   list-style-type: none;
 }
 
-button {
+.button {
   font-weight: 500;
   color: inherit;
   letter-spacing: 0.04em;
   cursor: pointer;
 
   background-color: #4d5ae5;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
 }
 
 .logo {
@@ -35,6 +37,7 @@ button {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #2e2f42;
 }
 
 .logo .accent {

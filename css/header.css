@@ -2,6 +2,14 @@
   font-weight: 500;
 }
 
+.site-nav-link:hover,
+.site-nav-link:focus,
+.address-item-link:hover,
+.address-item-link:focus {
+  color: #404bbf;
+}
+
 .address-list {
   font-style: normal;
+  color: #2e2f42;
 }
