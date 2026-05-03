@@ -3,10 +3,6 @@
   color: #2e2f42;
 }
 
-.address-item-link {
-  color: #2e2f42;
-}
-
 .site-nav-link:hover,
 .site-nav-link:focus,
 .address-item-link:hover,
@@ -16,5 +12,4 @@
 
 .address-list {
   font-style: normal;
-  color: #2e2f42;
 }
